@@ -4,7 +4,6 @@ from discord.ext import commands, tasks
 import requests
 import re
 
-TOKEN = os.getenv("DISCORD_TOKEN")
 DEFAULT_CHANNEL_ID = int(os.getenv("DISCORD_CHANNEL_ID", "0"))
 
 intents = discord.Intents.default()
@@ -82,4 +81,4 @@ async def on_ready():
         send_daily_verse.start()
 
 
-bot.run(TOKEN)
+bot.run("MTQzNzk0Njk4NDM3MDc5ODc0Mw.G0ccJo.NNbd6JiMOLzt1KXw-R5iL-DIHO9su_MDGMExiY")
